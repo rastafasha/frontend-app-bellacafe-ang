@@ -1,0 +1,159 @@
+<section class=" productPage statusOrder ">
+    <div class="butonBack">
+        <a href="javascript:void(0)" (click)="goBack()"><i class="fa fa-angle-left"></i></a>
+    </div>
+    <div class="titlePage">
+        <h3>Order Resumen</h3>
+    </div>
+
+    <div class="pedidosPrincipal">
+        <div class="pedidosPrincipaldiv1">
+            <!--slideproduct-->
+            <div class="product-item   ">
+                <!--img src="./assets/images/zip_package1.png" alt=""-->
+                <div class="sliderProduct">
+                    <div class="slide">
+                        <img src="./assets/images/zip_package1.png" />
+                        <!--p>rutrum tellus a tempus :)</p-->
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/zip_package2.png" />
+                        <!--p>rutrum tellus a tempus :)</p-->
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/zip_package1.png" />
+                        <!--p>rutrum tellus a tempus :)</p-->
+                    </div>
+                </div>
+            </div>
+            <!--slideproduct-->
+        </div>
+
+        <div class="pedidosPrincipaldiv2">
+            <h3>Su Pedido ha sido</h3>
+            <h1>Status Pedido</h1>
+            <p>Nos vemos Pronto!</p>
+            <br>
+            <h3>Pedido Enviado</h3>
+            <h3>Retiro en Tienda</h3>
+            <p>Fecha: 01/01/22</p>
+        </div>
+
+    </div>
+
+    <!--cuadromodal-->
+    <div class="cuadro-modal ">
+        <div class="lineamedio"></div>
+        <i class="fa fa-ellipsis-v" type="button" data-bs-toggle="modal" data-bs-target="#editarPedidoModal" style="right: 30px; position: absolute; float: right;"></i>
+
+
+
+        <div class="dropdown">
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div>
+
+        <div class="card-body cardTitleProduct ">
+            <div class="div1 ">
+                <h1>Title Product</h1>
+            </div>
+            <div class="div2 ">
+                <div class="price"> Fecha</div>
+            </div>
+            <div class="div3 ">
+                <h2>Cupón Aplicado: Si</h2>
+
+            </div>
+            <div class="div4 animated fadeInUp">
+                <div class="stars">
+                    <ul>
+                        <li class="active"><i class="fa fa-star"></i></li>
+                        <li>4.5</li>
+                    </ul>
+                </div>
+
+                <div class="rating">
+                    <span><input type="radio" name="rating" id="str5" value="5"><label for="str5"></label></span>
+                    <span><input type="radio" name="rating" id="str4" value="4"><label for="str4"></label></span>
+                    <span><input type="radio" name="rating" id="str3" value="3"><label for="str3"></label></span>
+                    <span><input type="radio" name="rating" id="str2" value="2"><label for="str2"></label></span>
+                    <span><input type="radio" name="rating" id="str1" value="1"><label for="str1"></label></span>
+                </div>
+                <div class="clear"></div>
+
+            </div>
+
+        </div>
+        <div class="clear"></div><br><br>
+
+        <div class="info-product animated fadeInUp">
+
+            <!-- productlist-shippin-order  -->
+            <app-productlist-shippin-order></app-productlist-shippin-order>
+            <!-- productlist-shippin-order  -->
+
+
+
+            <div class="cardsmall group  itemFav shadow p-3">
+                <h2>Shopping Bill</h2>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td style="color: #000">Delivery zone Name</td>
+                            <td style="color: #000" align="right">$5.00</td>
+                        </tr>
+
+                        <tr>
+                            <td style="color: #000">Descuento Cupon Total</td>
+                            <td style="color: #000" align="right">$13.00</td>
+                        </tr>
+                        <tr>
+                            <td style="color: #000">Sub Total</td>
+                            <td style="color: #000" align="right">$4.00</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot style="border-top: 1px solid #000; height: 50px;">
+                        <tr>
+                            <td style="color: #000">Total</td>
+                            <td style="color: #000" align="right">$53.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+
+            <div class="clear"></div><br>
+
+
+            <select class="form-select" aria-label="Default select example">
+        <option selected>Cambiar estado del Pedido</option>
+        <option value="1">Completado</option>
+        <option value="2">Cancelado</option>
+        <option value="3">Rechazado</option>
+        <option value="4">En Espera</option>
+        <option value="5">Visto</option>
+        <option value="6">Enviado</option>
+      </select>
+            <div class="botonera">
+                <a routerLink="/app/order">
+                    <div class="button btn-simple-gray">View Orders</div>
+                </a>
+                <a routerLink="/app/store">
+                    <div class="button btn-full-red">Continue </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <!--cuadromodal-->
+
+
+
+
+</section>

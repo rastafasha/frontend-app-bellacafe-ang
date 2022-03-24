@@ -1,0 +1,73 @@
+<section class="wallet page">
+    <div class="butonBack">
+        <a href="javascript:void(0)" (click)="goBack()"><i class="fa fa-angle-left"></i></a>
+    </div>
+    <div class="titlePage">
+        <h3>Wallet</h3>
+    </div>
+    <div class="container-fluid cuadro-modal animated fadeInUp">
+        <div class="lineamedio"></div>
+        <div class="row ">
+
+            <div class="areagris">
+            </div>
+
+            <div class="areablanc areablanc-interna animated fadeInUp ">
+
+                <div class="div-responsive1">
+
+
+                    <!-- <form class="d-flex shadowSearch">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success btn-seach" type="submit"><i class="fa fa-search"></i></button>
+                  </form> -->
+
+                    <h3>Metodo de Envío</h3>
+                    <div class="cardsmall group  itemFav ">
+                        <a routerLink="/app/pickup-store">
+                            <div class="group itemFav shadow">
+                                <div class="fa fa-cash-register"></div>
+                                <div class="div1pagocon">
+                                    <h2>PickUp</h2>
+                                    <p>Retiro en el local</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="clear"></div>
+                        <a routerLink="/app/shipping">
+                            <div class="group itemFav shadow">
+                                <div class="fa fa-shipping-fast"></div>
+                                <div class="div1pagocon">
+                                    <h2>Delivery</h2>
+                                    <p>Info deliveryl</p>
+                                </div>
+                            </div>
+                        </a>
+
+
+                    </div>
+
+                    <!--factura shipping-bill-->
+                    <app-shipping-bill></app-shipping-bill>
+                    <!--factura shipping-bill -->
+                    <br><br>
+
+                    <a routerLink="/app/wallet-payment">
+                        <div class="button btn-full-red">Continue</div>
+                    </a>
+
+                </div>
+
+
+                <div class="div-responsive2">
+
+                    <app-lateral></app-lateral>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</section>

@@ -1,0 +1,134 @@
+<section class="page cart user">
+    <div class="butonBack">
+        <a href="javascript:void(0)" (click)="goBack()"><i class="fa fa-angle-left"></i></a>
+    </div>
+    <div class="titlePage">
+        <h3>Pickup Store</h3>
+    </div>
+    <!--list of products mobile-->
+    <app-product-order></app-product-order>
+    <!--list of products mobile-->
+
+    <!--cuadromodal-->
+    <div class="container-fluid cuadro-modal animated fadeInUp">
+        <div class="total">
+            <p>Sub-total: $18.00</p>
+        </div>
+        <div class="lineamedio"></div>
+        <div class="row">
+
+            <div class="areagris">
+            </div>
+
+            <div class="areablanc areablanc-interna animated fadeInUp">
+
+
+                <div class="div-responsive1">
+
+
+                    <!--list of products desktop-->
+                    <!-- <app-product-order></app-product-order> -->
+                    <!--list of products desktop-->
+
+                    <!--factura shipping-bill-->
+                    <app-shipping-bill></app-shipping-bill>
+                    <!--factura shipping-bill -->
+
+
+                    <div class="info-product animated fadeInUp scrollable">
+                        <h3>Datos para la Entrega</h3>
+                        <div class="form ">
+                            <form action="">
+                                <div class="col-xs-12 col-sm-6 mb-2">
+                                    <input class="form-control form-control-md" type="text" placeholder="First name" aria-label=".form-control-lg example">
+                                </div>
+
+
+                                <div class="col-xs-12 col-sm-6 mb-2">
+                                    <input class="form-control form-control-md" type="text" placeholder="Last name" aria-label=".form-control-lg example">
+                                </div>
+                                <div class="col-xs-12 col-sm-6 mb-2">
+                                    <input class="form-control form-control-md" type="text" placeholder="idNumber" aria-label=".form-control-lg example">
+                                </div>
+                                <div class="col-xs-12 col-sm-6 mb-2">
+                                    <input class="form-control form-control-md" type="text" placeholder="Phone Number" aria-label=".form-control-lg example">
+                                </div>
+                                <div class="col-xs-12 col-sm-6 mb-2">
+                                    <input class="form-control form-control-md" type="text" placeholder="email" aria-label=".form-control-lg example">
+                                </div>
+                                <div class="col-xs-12 col-sm-6 mb-2">
+                                    <input class="form-control form-control-md" type="text" placeholder="address" aria-label=".form-control-lg example">
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6 mb-2">
+                                    <select name="" id="" class="form-control form-control-md">
+                                      <option value="0">Select Category</option>
+                                      <option value="0">Category 1</option>
+                                      <option value="0">Category 2</option>
+                                      <option value="0">Category 3</option>
+                                      <option value="0">Category 4</option>
+                                  </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="">
+
+                                        <div class="col-xs-12 col-sm-6 mb-2">
+                                            <label for="">Pago con Td en caja</label>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="featured">
+                                                <label class="form-check-label" for="featured">Active</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 mb-2">
+                                            <label for="">Pago efectivo</label>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="featured">
+                                                <label class="form-check-label" for="featured">Active</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 mb-2">
+                                            <label for="">Factura Seniat</label>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="multiple">
+                                                <label class="form-check-label" for="multiple">Acept</label>
+
+                                            </div>
+                                            <div class="button btn-simple-gray col-xs-12 col-sm-6 mb-2" type="button" data-bs-toggle="modal" data-bs-target="#editarFacturaSeniatModal">Editar</div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 mb-2">
+                                            <input class="form-control form-control-md" type="file" placeholder="image" aria-label=".form-control-lg example">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="botonera">
+                                    <div class="button btn-simple-gray col-xs-12 col-sm-6 mb-2">Cancel</div>
+                                    <a routerLink="/app/wallet">
+                                        <div class="button btn-full-red col-xs-12 col-sm-6 mb-2">Continue</div>
+                                    </a>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+
+
+                </div>
+
+                <div class="div-responsive2">
+                    <app-lateral></app-lateral>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--cuadromodal-->
+
+
+
+
+
+
+</section>

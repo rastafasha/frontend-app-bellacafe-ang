@@ -1,0 +1,70 @@
+<section class="page cart pedido">
+    <div class="butonBack">
+        <a href="javascript:void(0)" (click)="goBack()"><i class="fa fa-angle-left"></i></a>
+    </div>
+    <div class="titlePage">
+        <h3>Manage Orders </h3>
+    </div>
+    <!--list of order products-->
+    <app-product-order></app-product-order>
+    <!--list of order products-->
+
+
+    <!--cuadromodal-->
+    <div class="container-fluid cuadro-modal">
+        <div class="lineamedio"></div>
+        <div class="row">
+
+            <div class="areagris">
+            </div>
+
+            <div class="areablanc areablanc-interna animated fadeInUp">
+
+
+                <div class="div-responsive1">
+
+
+                    <!--list of products2-->
+                    <!-- <app-product-order></app-product-order> -->
+                    <!--list of products2-->
+                    <br>
+
+
+                    <br>
+                    <!-- tabs navigation -->
+                    <h5>Completados | Cancelados</h5>
+                    <div class="post-inner ">
+                        <div class="clear"></div>
+                        <div class="botonera">
+                            <div class="button btn-simple-gray">Anterior</div>
+                            <div class="button btn-full-red">Siguiente</div>
+                        </div>
+                        <div class="clear"></div>
+                        <br><br>
+
+
+                        <!--list of products2-->
+                        <app-product-order-list></app-product-order-list>
+                        <!--list of products2-->
+
+
+                    </div>
+                    <!-- tabs navigation -->
+
+
+                </div>
+
+                <div class="div-responsive2">
+                    <app-lateral></app-lateral>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--cuadromodal-->
+
+
+
+
+
+
+</section>
