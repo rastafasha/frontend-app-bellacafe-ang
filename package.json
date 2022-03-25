@@ -4,6 +4,7 @@
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
+        "start:prod": "ng build --prod && lite-server --baseDir dist/bella-cafe",
         "build": "ng build",
         "watch": "ng build --watch --configuration development",
         "test": "ng test"
@@ -19,6 +20,7 @@
         "@angular/platform-browser-dynamic": "~13.0.0",
         "@angular/router": "~13.0.0",
         "@angular/service-worker": "~13.0.0",
+        "@capacitor/core": "^3.4.3",
         "drift-zoom": "^1.4.0",
         "html2canvas": "^1.0.0-rc.5",
         "jquery": "^3.5.1",
@@ -29,8 +31,8 @@
         "rxjs": "~7.4.0",
         "socket.io-client": "^2.3.0",
         "spectrum-colorpicker2": "^2.0.0",
-        "tiny-slider": "^2.9.3",
         "sweetalert2": "^11.4.6",
+        "tiny-slider": "^2.9.3",
         "tslib": "^2.3.0",
         "zone.js": "~0.11.4"
     },
@@ -38,6 +40,7 @@
         "@angular-devkit/build-angular": "~13.0.3",
         "@angular/cli": "~13.0.3",
         "@angular/compiler-cli": "~13.0.0",
+        "@capacitor/cli": "^3.4.3",
         "@types/jasmine": "~3.10.0",
         "@types/node": "^12.11.1",
         "jasmine-core": "~3.10.0",
@@ -46,6 +49,7 @@
         "karma-coverage": "~2.0.3",
         "karma-jasmine": "~4.0.0",
         "karma-jasmine-html-reporter": "~1.7.0",
+        "lite-server": "^2.6.1",
         "typescript": "~4.4.3"
     }
 }
