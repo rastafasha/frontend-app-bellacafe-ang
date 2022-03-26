@@ -2,7 +2,7 @@
     <div class="butonBack">
         <a href="javascript:void(0)" (click)="goBack()"><i class="fa fa-angle-left"></i></a>
     </div>
-    <a href="index.html"><img class="logo animated fadeIn" src="./assets/svg/Logo-BellaCafeFinal.svg" alt=""></a>
+    <a routerLink="/"><img class="logo animated fadeIn" src="./assets/svg/Logo-BellaCafeFinal.svg" alt=""></a>
 
 
     <!--slideproduct-->
@@ -29,15 +29,15 @@
     <div class="cuadro-modal isScroller">
         <div class="lineamedio"></div>
 
-        <div class="card-body cardTitleProduct ">
+        <div class="card-body cardTitleProduct " *ngIf="producto">
             <div class="div1 animated fadeInUp">
-                <h1>Name Product</h1>
+                <h1>{{producto.titulo}}</h1>
             </div>
             <div class="div2 animated fadeInUp">
-                <div class="price">$200.00</div>
+                <div class="price">${{producto.precio_antes}}</div>
             </div>
             <div class="div3 animated fadeInUp">
-                <h2>Category</h2>
+                <h2>{{product.categoria.nombre}</h2>
                 <div class="stars">
                     <ul>
                         <li class="active"><i class="fa fa-star"></i></li>
@@ -46,7 +46,7 @@
                 </div>
             </div>
             <div class="div4 animated fadeInUp">
-                <div class="reduceprice">$250.00</div>
+                <div class="reduceprice">${{producto.precio_ahora}}</div>
             </div>
 
         </div>
@@ -55,7 +55,7 @@
 
         <div class="info-product animated fadeInUp scrollable">
             <h4>Description</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate aut dignissimos inventore accusantium </p>
+            <p>{{producto.detalle}} </p>
             <ul>
                 <li>Height</li>
                 <li>Widht</li>

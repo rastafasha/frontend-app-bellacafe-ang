@@ -98,6 +98,7 @@
     -o-animation: cuadro-modal 1s 1 ease;
     -ms-animation: cuadro-modal 1s 1 ease;
     animation: cuadro-modal 1s 1 ease;
+    padding-top: 90px;
 }
 
 @keyframes cuadro-modal {
@@ -156,12 +157,12 @@
 
 .productPage .info-product {
     position: absolute;
-    top: 160px;
+    top: 230px;
     left: 15px;
     z-index: 10;
     width: 90%;
     display: block;
-    margin: auto
+    margin: auto;
 }
 
 .productPage .info-product h1 {

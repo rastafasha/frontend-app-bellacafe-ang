@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-// import { Categoria } from 'src/app/models/categoria.model';
-// import { CategoriaService } from 'src/app/services/categoria.service';
+import { Categoria } from 'src/app/models/categoria.model';
+import { CategoryService } from 'src/app/services/category.service';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -10,21 +10,22 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CategoryBarComponent implements OnInit {
 
-  // public categorias: Categoria[] =[];
+  public categorias: any;
 
   constructor(
-    // private categoriaService: CategoriaService,
+    private categoriaService: CategoryService,
   ) { }
 
   ngOnInit(): void {
+    this.loadCategories();
   }
   loadCategories(){
-    // this.categoriaService.cargarCategorias().subscribe(
-    //   categorias => {
-    //     this.categorias = categorias;
-    //     console.log(this.categorias);
-    //   }
-    // )
+    this.categoriaService.getCategories().subscribe(
+      resp => {
+        this.categorias = resp;
+        console.log(this.categorias);
+      }
+    )
   }
 
 }

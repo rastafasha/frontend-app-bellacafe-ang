@@ -13,6 +13,7 @@ import { ProductOrderComponent } from './product-order/product-order.component';
 import { ProductOrderListComponent } from './product-order-list/product-order-list.component';
 import { ProductlistShippinOrderComponent } from './productlist-shippin-order/productlist-shippin-order.component';
 import { ShippingBillComponent } from './shipping-bill/shipping-bill.component';
+import { CategoryService } from '../services/category.service';
 
 
 @NgModule({
@@ -48,6 +49,9 @@ import { ShippingBillComponent } from './shipping-bill/shipping-bill.component';
   imports: [
     CommonModule,
     RouterModule
+  ],
+  providers:[
+    CategoryService
   ]
 })
 export class SharedModule { }
